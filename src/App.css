@@ -1,33 +1,96 @@
-.App {
-  text-align: center;
+.mdl-layout-title{
+  font-size:15px !important;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.profile-img{
+  border-radius: 50%;
+  height: 30%;
+  margin-top: 5em;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.banner{
+  background-color: white;
+  opacity: .8;
+  width: 75%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.banner h1 {
+  font-size: 55px;
+  font-weight: bold;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner hr {
+  border-top: 5px double black;
+  width: 50%;
+  margin: auto;
+  
 }
+
+.banner p {
+  color: black;
+  font-size: 20px;
+  padding: 1em;
+
+}
+
+.header-navbar{
+  background: #59C173;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+.links a{
+  width: 100%;
+  height: 100%;
+}
+.links-item{
+  width: 20%;
+}
+
+.front-grid{
+  background: #59C173;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.webgl_content{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+Iframe{
+  border: none;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+
+
+
