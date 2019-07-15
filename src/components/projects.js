@@ -82,15 +82,25 @@ class Projects extends Component {
 
     WebGlTab(){
         return(
-            <Link to = "/webgl">
+            <div className =  "webGlTab_content">
 
-            <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                <Link to = "/webgl">
+                    <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Fishtank</CardTitle>
+                    </Card>
+                </Link>
+                <Link to = "/webgl">
+                    <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Fishtank</CardTitle>
+                    </Card>
+                </Link>
+                <Link to = "/webgl">
+                    <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Fishtank</CardTitle>
+                    </Card>
+                </Link>
 
-                <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Fishtank</CardTitle>
-
-            </Card>
-            </Link>
-
+            </div>
 
         )
     }

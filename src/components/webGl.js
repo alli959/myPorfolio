@@ -17,9 +17,9 @@ const Webgl = (props) => (
             scrolling= "no"/>
         
             <List className = "webgl_controls">
-                <ListItem>Bryan Cranston</ListItem>
-                <ListItem>Aaron Paul</ListItem>
-                <ListItem>Bob Odenkirk</ListItem>
+                {props.controls.split(',').map(line =>
+                    <ListItem className = "webgl_controls_item">{line}</ListItem>
+                    )}
             </List>
 
         </div>
