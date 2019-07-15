@@ -34,7 +34,6 @@ const AboutProject = (props) => (
         <Button onClick={() => {window.open(props.websites.github);}} colored>Github</Button>
         <Button style = {props.websites.isapi?({display: "inline-block"}):({display: "none"})} onClick={() => {window.open(props.websites.api);}} colored>API</Button>
         <Button onClick={() => {window.open(props.websites.demo);}} colored>Live Demo</Button>
-        <Button onClick = {() => {props.webGlValue("FISHTANK")}} ><Link to = "/webgl">test</Link></Button>
     </CardActions>
     <CardMenu style={{color: '#fff'}}>
         <IconButton name="share" />

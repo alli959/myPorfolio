@@ -129,6 +129,8 @@ class Projects extends Component {
 
     render() {
         return(
+            <div className = "projects">
+
             <div className="tabs">
                 <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
                     <Tab>Html/Css</Tab>
@@ -139,9 +141,10 @@ class Projects extends Component {
                     <Tab>Unity</Tab>
                     <Tab>Javascript Games</Tab>
                 </Tabs>
-                {this.checkTab()}
-                
             </div>
+                {this.checkTab()}
+            </div>
+                
         )
     }
 }

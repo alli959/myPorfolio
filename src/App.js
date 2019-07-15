@@ -51,7 +51,6 @@ class App extends Component {
                         </Navigation>
                     </Header>
                     <Drawer title="Alexander Guðmundsson">
-                        <img src={profile} alt="Profile" />
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/about">About Me</Link>
