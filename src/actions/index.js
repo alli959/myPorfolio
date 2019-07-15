@@ -78,6 +78,46 @@ export const Tab = (id,name) => {
     }
 }
 
+export const Location = (id) => {
+    switch(id){
+        case 0:
+            return {
+                type: "LOCATION",
+                payload: {
+                    location: [true,false,false,false]
+                }
+            }
+        case 1:
+            return {
+                type: "LOCATION",
+                payload: {
+                    location: [false, true,false, false]
+                }
+            }
+        case 2:
+            return {
+                type: "LOCATION",
+                payload: {
+                    location: [false, false, true, false]
+                }
+            }
+        case 3:
+            return {
+                type: "LOCATION",
+                payload: {
+                    location: [false, false,false, true]
+                }
+            }
+        default:
+            return {
+                type: "LOCATION",
+                payload: {
+                    location: [false, false,false, false]
+                } 
+            }
+    }
+}
+
 
 export const webGl = (name) => {
     switch(name){

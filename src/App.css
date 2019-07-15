@@ -73,6 +73,7 @@
 .links a{
   width: 100%;
   height: 100%;
+
 }
 .links-item{
   width: 20%;
@@ -104,6 +105,12 @@ Iframe{
 
 a {
   text-decoration-line: none;
+  color: black;
+}
+
+.Nav_item a {
+  color: black;
+
 }
 
 
