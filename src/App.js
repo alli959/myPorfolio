@@ -71,45 +71,58 @@ class App extends Component {
                             <Navigation>
 
                                 <div className = "Nav_item">
-                                    <Icon name="arrow_forward" style={this.props.location[0]?{display: "inline"}:{display: "none"}}/>
+                                    <Icon name="arrow_forward" style={this.props.location && this.props.location[0]?{display: "inline"}:{display: "none"}}/>
                                     <Link onClick = {() => {this.setLocation(0)}} to="/resume" colored>Resume</Link>
                                 </div>
 
                                 <div className = "Nav_item">
-                                    <Icon name="arrow_forward" style={this.props.location[1]?{display: "inline"}:{display: "none"}}/>
+                                    <Icon name="arrow_forward" style={this.props.location && this.props.location[1]?{display: "inline"}:{display: "none"}}/>
                                     <Link onClick = {() => {this.setLocation(1)}} to="/about">About Me</Link>
                                 </div>
                                 <div className = "Nav_item">
-                                    <Icon name="arrow_forward" style={this.props.location[2]?{display: "inline"}:{display: "none"}}/>
+                                    <Icon name="arrow_forward" style={this.props.location && this.props.location[2]?{display: "inline"}:{display: "none"}}/>
 
                                     <Link onClick = {() => {this.setLocation(2)}} to="/myprojects">My Projects</Link>
                                         <div style = {this.props.location[2]?{display: "block"}:{display:"none"}} className = "subNav">
-                                            <div onClick = {() =>{this.setTab(0,"TAB")}}>
+
+
+
+                                            <div className = "subNav_item" onClick = {() =>{this.setTab(0,"TAB")}}>
+                                                <Icon name="arrow_forward" style={this.props.tab===0?{display: "inline"}:{display: "none"}}/>
                                                 Html/Css
                                             </div>
-                                            <div onClick = {() => {this.setTab(1,"TAB")}}>
+                                            <div className = "subNav_item" onClick = {() => {this.setTab(1,"TAB")}}>
+                                                <Icon name="arrow_forward" style={this.props.tab===1?{display: "inline"}:{display: "none"}}/>
                                                 NodeJS Projects
                                             </div>
-                                            <div onClick = {() => {this.setTab(2,"TAB")}}>
+                                            <div className = "subNav_item" onClick = {() => {this.setTab(2,"TAB")}}>
+                                                <Icon name="arrow_forward" style={this.props.tab===2?{display: "inline"}:{display: "none"}}/>
                                                 React
                                             </div>
-                                            <div onClick = {() => {this.setTab(3,"TAB")}}>
+                                            <div className = "subNav_item" onClick = {() => {this.setTab(3,"TAB")}}>
+                                                <Icon name="arrow_forward" style={this.props.tab===3?{display: "inline"}:{display: "none"}}/>
                                                 WebGl
                                             </div>
-                                            <div onClick = {() => {this.setTab(4,"TAB")}}>
+                                            <div className = "subNav_item" onClick = {() => {this.setTab(4,"TAB")}}>
+                                                <Icon name="arrow_forward" style={this.props.tab===4?{display: "inline"}:{display: "none"}}/>
                                                 Spring
                                             </div>
-                                            <div onClick = {() => {this.setTab(5,"TAB")}}>
+                                            <div className = "subNav_item" onClick = {() => {this.setTab(5,"TAB")}}>
+                                                <Icon name="arrow_forward" style={this.props.tab===5?{display: "inline"}:{display: "none"}}/>
                                                 Unity
                                             </div>
-                                            <div onClick = {() => {this.setTab(6,"TAB")}}>
+                                            <div className = "subNav_item" onClick = {() => {this.setTab(6,"TAB")}}>
+                                                <Icon name="arrow_forward" style={this.props.tab===6?{display: "inline"}:{display: "none"}}/>
                                                 Javascript Games
                                             </div>
                                         </div>
+
+
+
                                 </div>
                                 <div className = "Nav_item">
 
-                                    <Icon name="arrow_forward" style={this.props.location[3]?{display: "inline"}:{display: "none"}}/>
+                                    <Icon name="arrow_forward" style={this.props.location && this.props.location[3]?{display: "inline"}:{display: "none"}}/>
 
                                     <Link onClick = {() => {this.setLocation(3)}} to="/contact">Contact Info</Link>
                                 </div>
@@ -118,7 +131,7 @@ class App extends Component {
                     </Drawer>
                     <Content>
                         <div className="page-content" />
-                        <Main tab = {this.props.tab} setTab = {this.setTab} webGlValue = {this.setWebGl} passValue = {this.setProject} title = {this.props.title} about = {this.props.about} tools = {this.props.tools} websites = {this.props.websites} settings = {this.props.settings} controls = {this.props.controls}/>
+                        <Main location = {this.setLocation} tab = {this.props.tab} setTab = {this.setTab} webGlValue = {this.setWebGl} passValue = {this.setProject} title = {this.props.title} about = {this.props.about} tools = {this.props.tools} websites = {this.props.websites} settings = {this.props.settings} controls = {this.props.controls}/>
                     </Content>
                 </Layout>
             </div>
