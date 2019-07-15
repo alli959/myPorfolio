@@ -67,6 +67,17 @@ export const websites = (name) => {
     }
 }
 
+export const Tab = (id,name) => {
+    if(name === "TAB"){
+        return {
+            type: "TAB",
+            payload: {
+                id: id
+            }
+        }
+    }
+}
+
 
 export const webGl = (name) => {
     switch(name){

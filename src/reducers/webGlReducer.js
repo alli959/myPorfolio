@@ -2,11 +2,11 @@ const init = {
     type: 'NONE',
     payload: {
         settings: {
-            url: "0px",
+            url: "noUrl",
             height: "0px",
             width: "0px"
         },
-        controls: "left Arrow = bla, rightarrow = blabla"
+        controls: "left Arrow = bla,rightarrow = blabla"
         
     }
 }

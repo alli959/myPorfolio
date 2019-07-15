@@ -6,8 +6,8 @@ import Main from './components/main';
 import profile from './images/Profile.jpg';
 import { connect } from 'react-redux';
 import {websites} from './actions';
-import {webGl} from './actions'
-
+import {webGl} from './actions';
+import {Tab} from './actions';
 
 
 
@@ -15,8 +15,13 @@ class App extends Component {
     constructor(props){
         super(props);
 
+        this.state = {
+            currentTab: 0
+        }
+
         this.setProject = this.setProject.bind(this);
         this.setWebGl = this.setWebGl.bind(this);
+        this.setTab = this.setTab.bind(this);
 
     }
 
@@ -29,8 +34,15 @@ class App extends Component {
     }
 
     setWebGl = (name) => {
-        this.props.setWebGl(name)
+        this.props.setWebGl(name);
     }
+
+    setTab = (id,name) => {
+        console.log(name);
+        this.props.setTab(id,name);
+    }
+
+    
 
     
 
@@ -51,16 +63,42 @@ class App extends Component {
                         </Navigation>
                     </Header>
                     <Drawer title="Alexander Guðmundsson">
-                        <Navigation>
-                            <Link to="/resume">Resume</Link>
-                            <Link to="/about">About Me</Link>
-                            <Link to="/myprojects">My Projects</Link>
-                            <Link to="/contact">Contact Info</Link>
-                        </Navigation>
+                        <div className = "Nav">
+                            <Navigation>
+
+                                <Link to="/resume">Resume</Link>
+                                <Link to="/about">About Me</Link>
+                                <Link to="/myprojects">My Projects</Link>
+                                    <div className = "subNav">
+                                        <div onClick = {() =>{this.setTab(0,"TAB")}}>
+                                            Html/Css
+                                        </div>
+                                        <div onClick = {() => {this.setTab(1,"TAB")}}>
+                                            NodeJS Projects
+                                        </div>
+                                        <div onClick = {() => {this.setTab(2,"TAB")}}>
+                                            React
+                                        </div>
+                                        <div onClick = {() => {this.setTab(3,"TAB")}}>
+                                            WebGl
+                                        </div>
+                                        <div onClick = {() => {this.setTab(4,"TAB")}}>
+                                            Spring
+                                        </div>
+                                        <div onClick = {() => {this.setTab(5,"TAB")}}>
+                                            Unity
+                                        </div>
+                                        <div onClick = {() => {this.setTab(6,"TAB")}}>
+                                            Javascript Games
+                                        </div>
+                                    </div>
+                                <Link to="/contact">Contact Info</Link>
+                            </Navigation>
+                        </div>
                     </Drawer>
                     <Content>
                         <div className="page-content" />
-                        <Main webGlValue = {this.setWebGl} passValue = {this.setProject} title = {this.props.title} about = {this.props.about} tools = {this.props.tools} websites = {this.props.websites} settings = {this.props.settings} controls = {this.props.controls}/>
+                        <Main tab = {this.props.tab} setTab = {this.setTab} webGlValue = {this.setWebGl} passValue = {this.setProject} title = {this.props.title} about = {this.props.about} tools = {this.props.tools} websites = {this.props.websites} settings = {this.props.settings} controls = {this.props.controls}/>
                     </Content>
                 </Layout>
             </div>
@@ -75,12 +113,14 @@ const mapStateToProps = state => ({
     tools: state.Project.tools,
     websites: state.Project.websites,
     settings: state.webGl.settings,
-    controls: state.webGl.controls
+    controls: state.webGl.controls,
+    tab: state.Tab.id
 });
 
 const mapActionsToProps = {
     setProject: websites,
-    setWebGl: webGl
+    setWebGl: webGl,
+    setTab: Tab
 }
 
 export default connect(mapStateToProps, mapActionsToProps)(App);

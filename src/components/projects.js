@@ -2,22 +2,25 @@ import React, { Component } from 'react';
 import {Tabs, Tab, Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
 import { Link } from 'react-router-dom'
 import logo_react from '../images/logo_react.png';
+import { connect } from 'react-redux';
+
 
 
 
 class Projects extends Component {
     constructor(){
         super();
-        this.state = { 
-            activeTab: 0,
-        
-        };
+    }
+
+
+    componentDidMount() {
+
     }
 
 
     //check on activeTab
     checkTab(){
-        switch(this.state.activeTab){
+        switch(this.props.tab){
             case 0:
                 return this.HtmlTab();
             case 1:
@@ -125,6 +128,12 @@ class Projects extends Component {
         )
     }
 
+    setTab(id){
+        this.setState({
+            activeTab: id
+        });
+    }
+
 
 
     render() {
@@ -132,7 +141,7 @@ class Projects extends Component {
             <div className = "projects">
 
             <div className="tabs">
-                <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId})} ripple>
+                <Tabs activeTab={this.props.tab} onChange={(tabId) => this.props.setTab(tabId,"TAB")} ripple>
                     <Tab>Html/Css</Tab>
                     <Tab>NodeJS Projects</Tab>
                     <Tab>React</Tab>
@@ -148,5 +157,6 @@ class Projects extends Component {
         )
     }
 }
+
 
 export default Projects;
