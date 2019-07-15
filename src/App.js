@@ -83,7 +83,7 @@ class App extends Component {
                                     <Icon name="arrow_forward" style={this.props.location && this.props.location[2]?{display: "inline"}:{display: "none"}}/>
 
                                     <Link onClick = {() => {this.setLocation(2)}} to="/myprojects">My Projects</Link>
-                                        <div style = {this.props.location[2]?{display: "block"}:{display:"none"}} className = "subNav">
+                                        <div style = {this.props.location && this.props.location[2]?{display: "block"}:{display:"none"}} className = "subNav">
 
 
 
