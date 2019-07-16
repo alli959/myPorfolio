@@ -124,6 +124,51 @@ a {
   flex-wrap: wrap;
 }
 
+.Resume{
+  display: "flex";
+
+}
+
+.Resume_header{
+  background:black; 
+  display: block;
+}
+
+.Resume_header h1{
+  margin-left: 0.5em;
+  color: white;
+}
+
+.Resume_header h3{
+  margin-left: 0.5em;
+  color: white;
+}
+
+.Resume_work_main{
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 864px){
+  .Resume_work_main {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+.Resume_content{
+  display: flex;
+  justify-content: space-between;  
+}
+.Resume_content .Resume_right{
+  background: gray;
+  width: 20%;
+}
+.Resume_content .Resume_right .Resume_skills p {
+  margin-left: 0.3em;
+}
+
 
 
 
