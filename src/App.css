@@ -126,8 +126,12 @@ a {
 
 .Resume{
   display: "flex";
-
 }
+
+.Resume .mdl-card{
+  overflow: scroll;
+}
+
 
 .Resume_header{
   background:black; 
@@ -144,17 +148,57 @@ a {
   color: white;
 }
 
+.Resume_content {
+  padding-left: 0.5em;
+}
+
+.Resume_summary .mdl-card__supporting-text{
+  display: flex;
+}
+
+
 .Resume_work_main{
+  display: block;
+}
+
+.Resume_work_main .Resume_work_main_item {
   display: flex;
   align-items: baseline;
+  max-width: 600px;
+}
+
+.Resume_work_item ul {
+  list-style-type: disc;
+}
+
+.Resume_work_item ul li {
+  display: list-item;
+  max-width: 400px;
+  overflow: visible;
+  padding: 0;
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+
+
+.Resume_work_main_item .year{
+  max-width: 100px;
 }
 
 @media screen and (max-width: 864px){
-  .Resume_work_main {
+  .Resume_work_main_item {
     flex-wrap: wrap;
   }
 
 }
+
+
+.Resume_work  .mdl-card__title {
+  padding: 0;
+  margin-bottom: 0.7em;
+}
+
 
 
 .Resume_content{
@@ -165,6 +209,8 @@ a {
   background: gray;
   width: 20%;
 }
+
+
 .Resume_content .Resume_right .Resume_skills p {
   margin-left: 0.3em;
 }
