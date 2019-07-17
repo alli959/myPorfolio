@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import {Tabs, Tab, Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
 import { Link } from 'react-router-dom'
-import logo_react from '../images/logo_react.png';
-import { connect } from 'react-redux';
+
 
 
 
 
 class Projects extends Component {
-    constructor(){
-        super();
-    }
-
 
     componentDidMount() {
 
@@ -89,14 +84,39 @@ class Projects extends Component {
                         <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Fishtank</CardTitle>
                     </Card>
                 </Link>
+
+
                 <Link to = "/webgl">
-                    <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
-                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Fishtank</CardTitle>
+                    <Card onClick = {() => {this.aboutWebgl("CHAIR")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Chair</CardTitle>
                     </Card>
                 </Link>
+
+
                 <Link to = "/webgl">
-                    <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
-                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Fishtank</CardTitle>
+                    <Card onClick = {() => {this.aboutWebgl("HELESPADE")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Helespade</CardTitle>
+                    </Card>
+                </Link>
+
+
+                <Link to = "/webgl">
+                    <Card onClick = {() => {this.aboutWebgl("SOLKERFI")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Solar System</CardTitle>
+                    </Card>
+                </Link>
+
+
+                <Link to = "/webgl">
+                    <Card onClick = {() => {this.aboutWebgl("ROBOTARM")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Robot Arm</CardTitle>
+                    </Card>
+                </Link>
+
+
+                <Link to = "/webgl">
+                    <Card onClick = {() => {this.aboutWebgl("PONG")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Pong</CardTitle>
                     </Card>
                 </Link>
 

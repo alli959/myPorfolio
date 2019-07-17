@@ -3,7 +3,6 @@ import './App.css';
 import {Layout, Icon, Header, Navigation, Drawer, Content} from 'react-mdl'; 
 import { Link } from 'react-router-dom'
 import Main from './components/main';
-import profile from './images/Profile.jpg';
 import { connect } from 'react-redux';
 import {websites} from './actions';
 import {webGl} from './actions';

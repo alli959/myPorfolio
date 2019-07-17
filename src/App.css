@@ -190,6 +190,9 @@ a {
   margin-bottom: 2em;
 }
 @media screen and (max-width: 764px){
+  .webgl_content{
+    margin-left: 0;
+  }
   .Resume {
     display: flex;
   }

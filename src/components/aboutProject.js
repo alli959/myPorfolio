@@ -1,9 +1,9 @@
 import React from 'react';
 
+import Profile from '../images/Profile.jpg'
 import img_statTracker from '../images/bball_stat_preview.PNG';
 import img_gullnesti from '../images/gullnesti_preview.PNG';
 import {Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
-import { Link } from 'react-router-dom'
 
 
 
@@ -13,6 +13,8 @@ function getPicture(title){
             return img_statTracker;
         case "Gullnesti":
             return img_gullnesti;
+        default:
+            return Profile;
     }
 }
 
@@ -20,7 +22,7 @@ const AboutProject = (props) => (
     <div className = "project">
     <Card shadow={0} style={{width: '768px', margin: 'auto'}}>
     <CardTitle>{props.title}</CardTitle>
-    <img src = {getPicture(props.title)} style = {{height: '420px'}}></img>
+    <img alt = "Preview" src = {getPicture(props.title)} style = {{height: '420px'}}></img>
     <CardText>
         <h2>About</h2>
         <h3>Background</h3>

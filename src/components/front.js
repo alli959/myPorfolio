@@ -17,9 +17,9 @@ class Front extends Component {
                             <hr/>
                             <p>HTML/CSS | Javascript | NodeJS | Express | React | React Native | Java | Java Spring | Python3 | Android | SQLite | Postgres </p>
                             <div className="links">
-                                <a href="https://github.com/alli959" target="_blank"><img src = {Github} alt="github" className="links-item"></img></a>
-                                <a href="https://www.linkedin.com/in/alexander-gu%C3%B0mundsson-053200189/" target="_blank"><img src = {Linkedin} alt="linkedin" className="links-item"></img></a>
-                                <a href="https://notendur.hi.is/alg35/" target="_blank"><img src = {School} alt="school" className="links-item"></img></a>
+                                <a href="https://github.com/alli959"><img src = {Github} alt="github" className="links-item"></img></a>
+                                <a href="https://www.linkedin.com/in/alexander-gu%C3%B0mundsson-053200189/"><img src = {Linkedin} alt="linkedin" className="links-item"></img></a>
+                                <a href="https://notendur.hi.is/alg35/"><img src = {School} alt="school" className="links-item"></img></a>
                             </div>
                         </div>
                     </Cell>

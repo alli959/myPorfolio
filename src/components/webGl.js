@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Iframe from 'react-iframe'
-import {Layout, Header, Navigation, Drawer, Content, List, ListItem} from 'react-mdl'; 
+import {List, ListItem} from 'react-mdl'; 
 
 const Webgl = (props) => (
 

@@ -133,6 +133,78 @@ export const webGl = (name) => {
                     controls: "Scroll Down => Zoom In,Scroll Up => Zoom Out,(Hold) Mouse One => Move View"
                 }
             }
+
+        
+        case "CHAIR":
+            return {
+                type: "WEBGL",
+                payload: {
+                    settings: {
+                        url: "https://notendur.hi.is/~alg35/T%c3%b6lvugraf%c3%adk/heimaverkefni%204/chair.html",
+                        height: "552px",
+                        width: "552px"
+                    },
+                    controls: "(Hold) Mouse One => Move View"
+                }
+            }
+
+        
+        case "HELESPADE":
+            return {
+                type: "WEBGL",
+                payload: {
+                    settings: {
+                        url: "https://notendur.hi.is/~alg35/T%c3%b6lvugraf%c3%adk/heimaverkefni%204/helespade.html",
+                        height: "552px",
+                        width: "552px"
+                    },
+                    controls: "(Hold) Mouse One => Move View"
+                }
+            }
+
+        
+        case "SOLKERFI":
+            return {
+                type: "WEBGL",
+                payload: {
+                    settings: {
+                        url: "https://notendur.hi.is/~alg35/T%c3%b6lvugraf%c3%adk/heimaverkefni%204/solkerfi.html",
+                        height: "552px",
+                        width: "552px"
+                    },
+                    controls: "(Hold) Mouse One => Move View"
+                }
+            }
+
+
+        case "ROBOTARM":
+            return {
+                type: "WEBGL",
+                payload: {
+                    settings: {
+                        url: "https://notendur.hi.is/~alg35/T%c3%b6lvugraf%c3%adk/heimaverkefni%205/robotArmHH.html",
+                        height: "552px",
+                        width: "552px"
+                    },
+                    controls: "z/x => rotate stump,a/s => turn bottom arm,q/w => turn middle arm,rArrow and lArrow => turn top arm"
+                }
+            }
+
+        
+        case "PONG":
+            return {
+                type: "WEBGL",
+                payload: {
+                    settings: {
+                        url: "https://notendur.hi.is/~alg35/T%c3%b6lvugraf%c3%adk/verkefni%201/spadi-orvar.html",
+                        height: "690px",
+                        width: "1030px"
+                    },
+                    controls: "rArrow and lArrow => move"
+                }
+            }
+
+        
         default:
             return {
                 type: 'NONE',
