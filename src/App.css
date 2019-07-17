@@ -19,11 +19,19 @@
   margin: auto;
   border-radius: 10px;
 }
+
+.banner p {
+  color: black;
+  font-size: 20px;
+  padding: 1em;
+
+}
+
 .profile-img{
   border-radius: 50%;
-  height: 30%;
+  height: 20%;
   margin-top: 5em;
-
+  
 }
 @media screen and (max-width: 940px){
   .tabs {
@@ -31,13 +39,21 @@
   }
   .profile-img{
     border-radius: 50%;
-    height: 20%;
+    height: 15%;
     margin-top: 5em;
   }
   .banner h1{
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 526px){
+  .banner p{
+    font-size: 12px;
+  }
+
+}
+  
 
 
 .mdl-layout-title{
@@ -47,12 +63,6 @@
 
 
 
-.banner p {
-  color: black;
-  font-size: 20px;
-  padding: 1em;
-
-}
 
 .header-navbar{
   background: #59C173;  /* fallback for old browsers */
