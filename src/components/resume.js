@@ -10,8 +10,8 @@ class Resume extends Component {
             <div className = "Resume">
                 <Card shadow={0} style={{width: '768px', margin: 'auto'}}>
                     <div className = "Resume_header">
-                        <h1>Alexander Guðmundsson</h1>
-                        <h3>Programmer</h3>
+                        <CardTitle className = "Resume_title" style = {{color: '#fff', margin: 'auto', font_size: '36px'}}>Alexander Guðmundsson</CardTitle>
+                        <CardTitle style = {{color: '#fff', margin: 'auto'}}>Programmer</CardTitle>
                     </div>
                     <div className = "Resume_content">
                         <div className = "Resume_left">
@@ -81,7 +81,7 @@ class Resume extends Component {
                                             <b>2015-12</b>
                                         </div>
                                         <div className = "Resume_work_item">
-                                            <CardTitle>Meat Cutter(summer,christmas And Easter) </CardTitle>
+                                            <CardTitle>Meat Cutter</CardTitle>
                                             <i>Matfugl, Reykjavík, Mosfellsbær</i>
                                         </div>
                                     </div>
@@ -134,6 +134,7 @@ class Resume extends Component {
                         <div className = "Resume_right">
                             <div className = "Resume_skills">
                                 <CardTitle>Skills</CardTitle>
+                                <hr/>
                                         <p>HTML/CSS</p>
                                         <p>Javascript</p>
                                         <p>NodeJs</p>

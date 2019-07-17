@@ -125,6 +125,7 @@ a {
 }
 
 .Resume{
+  margin-top: 3em;
   display: "flex";
 }
 
@@ -135,15 +136,10 @@ a {
   display: block;
 }
 
-.Resume_header h1{
-  margin-left: 0.5em;
-  color: white;
+.Resume .Resume_title h2{
+  font-size: 36px
 }
 
-.Resume_header h3{
-  margin-left: 0.5em;
-  color: white;
-}
 
 .Resume_content {
   padding-left: 0.5em;
@@ -177,6 +173,10 @@ a {
   
 }
 
+.Resume_work_item ul li:last-child{
+  margin-bottom: 0;
+}
+
 
 
 .Resume_work_main_item .year{
@@ -187,6 +187,7 @@ a {
   display: flex;
   align-items: baseline;
   max-width: 600px;
+  margin-bottom: 2em;
 }
 @media screen and (max-width: 764px){
   .Resume {
