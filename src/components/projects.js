@@ -59,7 +59,7 @@ class Projects extends Component {
 
     ReactTab(){
         return(
-            <Card shadow={5} style={{width: '320px', height: '400px', margin: 'auto', marginTop: '10px'}}>
+            <Card shadow={5} style={{width: '320px', height: '400px', margin: 'auto', marginTop: '10px', display: 'flex'}}>
                 <CardTitle expand style={{color: '#000000', padding: '0px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png)" }}></CardTitle>
                 <CardTitle>Gullnesti(not ready)</CardTitle>
                 <CardText>
