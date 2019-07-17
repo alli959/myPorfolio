@@ -128,9 +128,6 @@ a {
   display: "flex";
 }
 
-.Resume .mdl-card{
-  overflow: scroll;
-}
 
 
 .Resume_header{
@@ -156,19 +153,18 @@ a {
   display: flex;
 }
 
+.Resume_left{
+  width: 80%;
+}
+
 
 .Resume_work_main{
   display: block;
 }
 
-.Resume_work_main .Resume_work_main_item {
-  display: flex;
-  align-items: baseline;
-  max-width: 600px;
-}
 
 .Resume_work_item ul {
-  list-style-type: disc;
+  list-style: disc;
 }
 
 .Resume_work_item ul li {
@@ -178,6 +174,7 @@ a {
   padding: 0;
   padding-left: 1.5em;
   margin-bottom: 1em;
+  
 }
 
 
@@ -186,11 +183,29 @@ a {
   max-width: 100px;
 }
 
-@media screen and (max-width: 864px){
-  .Resume_work_main_item {
+.Resume_work_main .Resume_work_main_item {
+  display: flex;
+  align-items: baseline;
+  max-width: 600px;
+}
+@media screen and (max-width: 764px){
+  .Resume {
+    display: flex;
+  }
+
+  .Resume_work_main .Resume_work_main_item {
+    max-width: 288px;
+    padding-left: 1em;
     flex-wrap: wrap;
   }
 
+  .Resume_summary .mdl-card__supporting-text{
+    max-width: 288px;
+    flex-wrap: wrap;
+  }
+
+
+  
 }
 
 
