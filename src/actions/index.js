@@ -84,35 +84,35 @@ export const Location = (id) => {
             return {
                 type: "LOCATION",
                 payload: {
-                    location: [true,false,false,false]
+                    pageLocation: [true,false,false,false]
                 }
             }
         case 1:
             return {
                 type: "LOCATION",
                 payload: {
-                    location: [false, true,false, false]
+                    pageLocation: [false, true,false, false]
                 }
             }
         case 2:
             return {
                 type: "LOCATION",
                 payload: {
-                    location: [false, false, true, false]
+                    pageLocation: [false, false, true, false]
                 }
             }
         case 3:
             return {
                 type: "LOCATION",
                 payload: {
-                    location: [false, false,false, true]
+                    pageLocation: [false, false,false, true]
                 }
             }
         default:
             return {
                 type: "LOCATION",
                 payload: {
-                    location: [false, false,false, false]
+                    pageLocation: [false, false,false, false]
                 } 
             }
     }

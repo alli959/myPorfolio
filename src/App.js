@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {Layout, Icon, Header, Navigation, Drawer, Content} from 'react-mdl'; 
-import { Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import Main from './components/main';
 import { connect } from 'react-redux';
 import {websites} from './actions';
@@ -11,12 +11,15 @@ import {Location} from './actions';
 
 
 
+
+
+
 class App extends Component {
     constructor(props){
         super(props);
 
         this.state = {
-            currentTab: 0
+            currentTab: 0,
         }
 
         this.setProject = this.setProject.bind(this);
@@ -25,6 +28,29 @@ class App extends Component {
         this.setLocation = this.setLocation.bind(this);
 
     }
+
+
+
+
+    componentDidUpdate(prevProps) {
+        if (prevProps.location !== this.props.location) {
+            if(this.props.location.pathname === '/resume'){
+                this.props.setLocation(0);
+            }
+            else if( this.props.location.pathname === '/about'){
+                this.props.setLocation(1);
+            }
+            else if( this.props.location.pathname === '/myprojects'){
+                this.props.setLocation(2);
+            }
+            else if( this.props.location.pathname === '/contact'){
+                this.props.setLocation(3);
+            }
+            else{
+                this.props.setLocation(-1);
+            }
+        }
+      }
 
 
     setLocation = (id) => {
@@ -59,10 +85,10 @@ class App extends Component {
                 <Layout>
     <Header className="header-navbar" title={<Link onClick = {() => {this.setLocation(-1)}} style={{textDecoration: 'none', color: 'white'}} to="/">Portfolio</Link>} scroll>
                         <Navigation>
-                            <Link onClick = {() => {this.setLocation(0)}} to="/resume">Resume</Link>
-                            <Link onClick = {() => {this.setLocation(1)}} to="/about">About Me</Link>
-                            <Link onClick = {() => {this.setLocation(2)}} to="/myprojects">My Projects</Link>
-                            <Link onClick = {() => {this.setLocation(3)}} to="/contact">Contact Info</Link>
+                            <Link to="/resume">Resume</Link>
+                            <Link to="/about">About Me</Link>
+                            <Link to="/myprojects">My Projects</Link>
+                            <Link to="/contact">Contact Info</Link>
                         </Navigation>
                     </Header>
                     <Drawer title="Alexander Guðmundsson">
@@ -70,19 +96,19 @@ class App extends Component {
                             <Navigation>
 
                                 <div className = "Nav_item">
-                                    <Icon name="arrow_forward" style={this.props.location && this.props.location[0]?{display: "inline"}:{display: "none"}}/>
-                                    <Link onClick = {() => {this.setLocation(0)}} to="/resume" colored>Resume</Link>
+                                    <Icon name="arrow_forward" style={this.props.pageLocation && this.props.pageLocation[0]?{display: "inline"}:{display: "none"}}/>
+                                    <Link to="/resume" colored>Resume</Link>
                                 </div>
 
                                 <div className = "Nav_item">
-                                    <Icon name="arrow_forward" style={this.props.location && this.props.location[1]?{display: "inline"}:{display: "none"}}/>
-                                    <Link onClick = {() => {this.setLocation(1)}} to="/about">About Me</Link>
+                                    <Icon name="arrow_forward" style={this.props.pageLocation && this.props.pageLocation[1]?{display: "inline"}:{display: "none"}}/>
+                                    <Link to="/about">About Me</Link>
                                 </div>
                                 <div className = "Nav_item">
-                                    <Icon name="arrow_forward" style={this.props.location && this.props.location[2]?{display: "inline"}:{display: "none"}}/>
+                                    <Icon name="arrow_forward" style={this.props.pageLocation && this.props.pageLocation[2]?{display: "inline"}:{display: "none"}}/>
 
-                                    <Link onClick = {() => {this.setLocation(2)}} to="/myprojects">My Projects</Link>
-                                        <div style = {this.props.location && this.props.location[2]?{display: "block"}:{display:"none"}} className = "subNav">
+                                    <Link to="/myprojects">My Projects</Link>
+                                        <div style = {this.props.pageLocation && this.props.pageLocation[2]?{display: "block"}:{display:"none"}} className = "subNav">
 
 
 
@@ -121,7 +147,7 @@ class App extends Component {
                                 </div>
                                 <div className = "Nav_item">
 
-                                    <Icon name="arrow_forward" style={this.props.location && this.props.location[3]?{display: "inline"}:{display: "none"}}/>
+                                    <Icon name="arrow_forward" style={this.props.pageLocation && this.props.pageLocation[3]?{display: "inline"}:{display: "none"}}/>
 
                                     <Link onClick = {() => {this.setLocation(3)}} to="/contact">Contact Info</Link>
                                 </div>
@@ -130,7 +156,7 @@ class App extends Component {
                     </Drawer>
                     <Content>
                         <div className="page-content" />
-                        <Main location = {this.setLocation} tab = {this.props.tab} setTab = {this.setTab} webGlValue = {this.setWebGl} passValue = {this.setProject} title = {this.props.title} about = {this.props.about} tools = {this.props.tools} websites = {this.props.websites} settings = {this.props.settings} controls = {this.props.controls}/>
+                        <Main pageLocation = {this.setLocation} tab = {this.props.tab} setTab = {this.setTab} webGlValue = {this.setWebGl} passValue = {this.setProject} title = {this.props.title} about = {this.props.about} tools = {this.props.tools} websites = {this.props.websites} settings = {this.props.settings} controls = {this.props.controls}/>
                     </Content>
                 </Layout>
             </div>
@@ -147,7 +173,7 @@ const mapStateToProps = state => ({
     settings: state.webGl.settings,
     controls: state.webGl.controls,
     tab: state.Tab.id,
-    location: state.Location.location
+    pageLocation: state.Location.pageLocation
 });
 
 const mapActionsToProps = {
@@ -157,4 +183,4 @@ const mapActionsToProps = {
     setLocation: Location
 }
 
-export default connect(mapStateToProps, mapActionsToProps)(App);
+export default withRouter(connect(mapStateToProps, mapActionsToProps)(App));

@@ -1,7 +1,7 @@
 const init = {
     type: 'LOCATION',
     payload: {
-        location: [false,false,false,false]
+        pageLocation: [false,false,false,false]
     }
 };
 

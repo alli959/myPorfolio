@@ -5,7 +5,15 @@ import Github from '../images/logo_github.png';
 import Linkedin from '../images/logo_linkedin.png';
 import School from '../images/logo_school.png';
 
+
 class Front extends Component {
+
+
+
+
+
+
+
     render() {
         return(
             <div style={{width: '100%', margin: 'auto'}}>
