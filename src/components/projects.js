@@ -177,11 +177,11 @@ class Projects extends Component {
                     </Card>
                 </Link>
 
-                <Card shadow={5} style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px'}}>
+                <Card shadow={5} style={{width: '220px', height: '200px', margin: '0px', marginTop: '10px'}}>
                 <CardTitle expand style={{color: '#46b6ac', padding: '0px', background: "no-repeat center/90% url(https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png)"}}>Left 4k Dead</CardTitle>
                 <CardActions border>
-                    <Button onClick={() => {window.open('https://github.com/alli959/Hugbunadarverkefni1', '_blank');}} colored>Github</Button>
-                    <Button onClick={() => {window.open('https://bball-stat.herokuapp.com/', '_blank', )}} colored>Live Demo</Button>
+                    <Button onClick={() => {window.open('https://github.com/alli959/Hopverkefni-1', '_blank');}} colored>Github</Button>
+                    <Button onClick={() => {window.open('https://dingolfsson.github.io/Hopverkefni/poc1/', '_blank', )}} colored>Live Demo</Button>
 
                 </CardActions>
             </Card>
