@@ -83,7 +83,7 @@ class App extends Component {
         {/* Uses a header that scrolls with the text, rather than staying locked at the top */}
             <div className="demo-big-content">
                 <Layout>
-    <Header className="header-navbar" title={<Link onClick = {() => {this.setLocation(-1)}} style={{textDecoration: 'none', color: 'white'}} to="/">Portfolio</Link>} scroll>
+    <Header className="header-navbar" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">Portfolio</Link>} scroll>
                         <Navigation>
                             <Link to="/resume">Resume</Link>
                             <Link to="/about">About Me</Link>
@@ -91,7 +91,7 @@ class App extends Component {
                             <Link to="/contact">Contact Info</Link>
                         </Navigation>
                     </Header>
-                    <Drawer title="Alexander Guðmundsson">
+                    <Drawer title={<Link to = "/">Alexander Guðmundsson</Link>}>
                         <div className = "Nav">
                             <Navigation>
 
@@ -149,14 +149,14 @@ class App extends Component {
 
                                     <Icon name="arrow_forward" style={this.props.pageLocation && this.props.pageLocation[3]?{display: "inline"}:{display: "none"}}/>
 
-                                    <Link onClick = {() => {this.setLocation(3)}} to="/contact">Contact Info</Link>
+                                    <Link to="/contact">Contact Info</Link>
                                 </div>
                             </Navigation>
                         </div>
                     </Drawer>
                     <Content>
                         <div className="page-content" />
-                        <Main pageLocation = {this.setLocation} tab = {this.props.tab} setTab = {this.setTab} webGlValue = {this.setWebGl} passValue = {this.setProject} title = {this.props.title} about = {this.props.about} tools = {this.props.tools} websites = {this.props.websites} settings = {this.props.settings} controls = {this.props.controls}/>
+                        <Main pageLocation = {this.setLocation} tab = {this.props.tab} setTab = {this.setTab} webGlValue = {this.setWebGl} passValue = {this.setProject} title = {this.props.title} about = {this.props.about} tools = {this.props.tools} collaborators = {this.props.collaborators} websites = {this.props.websites} settings = {this.props.settings} controls = {this.props.controls}/>
                     </Content>
                 </Layout>
             </div>
@@ -169,6 +169,7 @@ const mapStateToProps = state => ({
     title: state.Project.title,
     about: state.Project.about,
     tools: state.Project.tools,
+    collaborators: state.Project.collaborators,
     websites: state.Project.websites,
     settings: state.webGl.settings,
     controls: state.webGl.controls,

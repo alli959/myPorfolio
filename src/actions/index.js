@@ -12,11 +12,15 @@ export const websites = (name) => {
                     usage : `You can create a account or login. From there you can create a new basketball team and add players to the team, there you can give the players name, position and jersey number. When starting a game you need to have at least five players. Once the game is started you can add statistics in real-time while watching the game. At the end of the game you cann see statistics of team and players in team.`
                 },
                 tools: "Java Spring, PostgreSQL, Javascript",
+                collaborators: {
+                    name: ["Alexander Guðmundsson", "Alexander Þór Hafþórsson", "Emil Alfreðsson"],
+                    git: ["https://github.com/alli959", "linkur", "https://github.com/fredzonn"]
+                },
                 websites: {
                     isapi: false,
                     github: "https://github.com/alli959/Hugbunadarverkefni1",
                     demo: "https://bball-stat.herokuapp.com/"
-                }
+                },
             }
         }
 
@@ -32,6 +36,10 @@ export const websites = (name) => {
                         usage: "NOT FINISHED YET! \n click on food items you want, then you can change or finish order"
                     },
                     tools: "React, react-dom, react-redux, react-router-dom, redux, redux-thunk",
+                    collaborators: {
+                        name: ["Alexander Guðmundsson"],
+                        git: ["https://github.com/alli959"]
+                    },
                     websites: {
                         isapi: true,
                         github: "https://github.com/alli959/lokaverkefni/tree/master/client",
@@ -52,6 +60,10 @@ export const websites = (name) => {
                         usage: ""
                     },
                     tools: "",
+                    collaborators: {
+                        name: [""],
+                        git: [""]
+                    },
                     websites: {
                         isapi: false,
                         github: "",
@@ -220,4 +232,4 @@ export const webGl = (name) => {
             }
     }
 
-}   
+}

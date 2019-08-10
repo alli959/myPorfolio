@@ -31,6 +31,8 @@ const AboutProject = (props) => (
         {props.about.usage}
         <h2>Tools</h2>
         {props.tools}
+        <h2>Collaborators</h2>
+        {props.collaborators.name.map((name) => <p>{name}</p>)}
     </CardText>
     <CardActions border>
         <Button onClick={() => {window.open(props.websites.github);}} colored>Github</Button>

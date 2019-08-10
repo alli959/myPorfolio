@@ -46,7 +46,21 @@ class Projects extends Component {
 
     //Case Html/CSS Tab
     HtmlTab(){
-        
+        return (
+            <div className = "Card_content">
+                <Card onClick = {() => {window.open("https://notendur.hi.is/alg35/vefforritun/verkefni5/")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://www.w3.org/html/logo/badge/html5-badge-h-solo.png)"}}>
+                    <CardTitle className = "cardTitle" expand style={{  color: "#000", padding: '0px' }}>Html/Css 1</CardTitle>
+                </Card>
+
+                <Card onClick = {() => {window.open("https://notendur.hi.is/~alg35/vefforritun/verkefni4/")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://www.w3.org/html/logo/badge/html5-badge-h-solo.png)"}}>
+                    <CardTitle className = "cardTitle" expand style={{  color: "#000", padding: '0px' }}>Html/Css 2</CardTitle>
+                </Card>
+
+                <Card onClick = {() => {window.open("https://notendur.hi.is/~alg35/vefforritun/Lokaverkefni/vefLokaverkefni/stort-verkefni2/gogn/")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://www.w3.org/html/logo/badge/html5-badge-h-solo.png)"}}>
+                    <CardTitle className = "cardTitle" expand style={{  color: "#000", padding: '0px' }}>Html/Css 3</CardTitle>
+                </Card>
+            </div>
+            )
     }
 
     //Case NodeJS
@@ -77,7 +91,7 @@ class Projects extends Component {
 
     WebGlTab(){
         return(
-            <div className =  "webGlTab_content">
+            <div className =  "Card_content">
 
                 <Link to = "/webgl">
                     <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
@@ -154,7 +168,25 @@ class Projects extends Component {
 
     JavascriptTab(){
         return(
-            <h1>Javascript page</h1>
+
+            <div className =  "Card_content">
+
+                <Link to = "/webgl">
+                    <Card onClick = {() => {window.open('https://notendur.hi.is/alg35/rocket/')}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png)"}}>
+                        <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>SpaceShip</CardTitle>
+                    </Card>
+                </Link>
+
+                <Card shadow={5} style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px'}}>
+                <CardTitle expand style={{color: '#46b6ac', padding: '0px', background: "no-repeat center/90% url(https://pluralsight.imgix.net/paths/path-icons/nodejs-601628d09d.png)"}}>Left 4k Dead</CardTitle>
+                <CardActions border>
+                    <Button onClick={() => {window.open('https://github.com/alli959/Hugbunadarverkefni1', '_blank');}} colored>Github</Button>
+                    <Button onClick={() => {window.open('https://bball-stat.herokuapp.com/', '_blank', )}} colored>Live Demo</Button>
+
+                </CardActions>
+            </Card>
+                
+            </div>
         )
     }
 

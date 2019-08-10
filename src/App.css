@@ -128,7 +128,7 @@ a {
   margin-top: 1em;
 }
 
-.webGlTab_content{
+.Card_content{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

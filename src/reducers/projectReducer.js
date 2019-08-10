@@ -7,6 +7,10 @@ const init = {
             usage : 'NONE'
         },
         tools: "NONE",
+        collaborators: {
+            name: [""],
+            git: [""]
+        },
         websites: {
             isapi: false,
             github: "https://github.com/alli959/",
