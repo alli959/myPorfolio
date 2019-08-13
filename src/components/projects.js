@@ -89,47 +89,50 @@ class Projects extends Component {
         )
     }
 
+
+
+
     WebGlTab(){
         return(
             <div className =  "Card_content">
 
                 <Link to = "/webgl">
-                    <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                    <Card onClick = {() => {this.aboutWebgl("FISHTANK")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/70% url(https://i.ibb.co/hZz3SVy/fishtank.png)"}}>
                         <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Fishtank</CardTitle>
                     </Card>
                 </Link>
 
 
                 <Link to = "/webgl">
-                    <Card onClick = {() => {this.aboutWebgl("CHAIR")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                    <Card onClick = {() => {this.aboutWebgl("CHAIR")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/70% url(https://i.ibb.co/pZZNt9G/chair.png)"}}>
                         <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Chair</CardTitle>
                     </Card>
                 </Link>
 
 
                 <Link to = "/webgl">
-                    <Card onClick = {() => {this.aboutWebgl("HELESPADE")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                    <Card onClick = {() => {this.aboutWebgl("HELESPADE")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/70% url(https://i.ibb.co/bR53WnW/helespade.png)"}}>
                         <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Helespade</CardTitle>
                     </Card>
                 </Link>
 
 
                 <Link to = "/webgl">
-                    <Card onClick = {() => {this.aboutWebgl("SOLKERFI")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                    <Card onClick = {() => {this.aboutWebgl("SOLKERFI")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/70% url(https://i.ibb.co/Xx2LZVh/solar-system.png)"}}>
                         <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Solar System</CardTitle>
                     </Card>
                 </Link>
 
 
                 <Link to = "/webgl">
-                    <Card onClick = {() => {this.aboutWebgl("ROBOTARM")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                    <Card onClick = {() => {this.aboutWebgl("ROBOTARM")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/70% url(https://i.ibb.co/kKYcp70/robot-arm.png)"}}>
                         <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Robot Arm</CardTitle>
                     </Card>
                 </Link>
 
 
                 <Link to = "/webgl">
-                    <Card onClick = {() => {this.aboutWebgl("PONG")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/WebGL_Logo.svg/2000px-WebGL_Logo.svg.png)"}}>
+                    <Card onClick = {() => {this.aboutWebgl("PONG")}}  shadow={5} expand style={{width: '220px', height: '200px', margin: 'auto', marginTop: '10px', background: "no-repeat center/90% url(https://i.ibb.co/Ykb1vr8/pong.png)"}}>
                         <CardTitle className = "cardTitle" expand style={{  color: '#46b6ac', padding: '0px' }}>Pong</CardTitle>
                     </Card>
                 </Link>

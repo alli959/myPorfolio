@@ -21,9 +21,37 @@ class Resume extends Component {
                                 </CardText>
                             </div>
                             <div className = "Resume_work">
-                                <CardTitle>Work History</CardTitle>
+
+                                <CardTitle>Education</CardTitle>
                                 <hr/>
                                 <div className = "Resume_work_main">
+                                    <div className = "Resume_work_main_item">
+                                        <div className = "year">
+                                            <b>2013-08 -</b>
+                                            <b>2015-06</b>
+                                        </div>
+                                        <div className = "Resume_work_item">
+
+                                            <CardTitle>High School Diploma</CardTitle>
+                                            <i>Verzlunarskóli Íslands - Reykjavík - Ofanleiti 1</i>
+                                        </div>
+                                    </div>
+                                    <div className = "Resume_work_main_item">
+                                        <div className = "year">
+                                            <b>2015-08 -</b>
+                                            <b>2019-06</b>
+                                        </div>
+                                        <div className = "Resume_work_item">
+
+                                            <CardTitle>BS: Computer Science</CardTitle>
+                                            <i>Háskóli Íslands - Iceland - Sæmundargötu 2</i>
+                                        
+                                        </div>
+                                    </div>
+                                    </div>
+                                <CardTitle>Work History</CardTitle>
+                                <hr/>
+                                    <div className = "Resume_work_main">
                                     <div className = "Resume_work_main_item">
                                         <div className = "year">
                                             <b>2016-06 -</b>
@@ -97,33 +125,6 @@ class Resume extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <CardTitle>Education</CardTitle>
-                                <hr/>
-                                <div className = "Resume_work_main">
-                                    <div className = "Resume_work_main_item">
-                                        <div className = "year">
-                                            <b>2013-08 -</b>
-                                            <b>2015-06</b>
-                                        </div>
-                                        <div className = "Resume_work_item">
-
-                                            <CardTitle>High School Diploma</CardTitle>
-                                            <i>Verzlunarskóli Íslands - Reykjavík - Ofanleiti 1</i>
-                                        </div>
-                                    </div>
-                                    <div className = "Resume_work_main_item">
-                                        <div className = "year">
-                                            <b>2015-08 -</b>
-                                            <b>2019-06</b>
-                                        </div>
-                                        <div className = "Resume_work_item">
-
-                                            <CardTitle>BS: Computer Science</CardTitle>
-                                            <i>Háskóli Íslands - Iceland - Sæmundargötu 2</i>
-                                        
-                                        </div>
-                                    </div>
-                                    </div>
                                     </div>
                                     </div>
 

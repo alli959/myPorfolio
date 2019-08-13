@@ -1,22 +1,6 @@
 import React, { Component } from 'react';
 
-/*About Me
 
-Intro:
-
-	My name is Alexander Guðmundsson and I'm a programmer. I live in Reykjavík, Iceland.
-
-
-Me:
-	
-	I am a very motivated and hard-working programmer. My favorite programming languages are Javascript,
-	Python and Java. I am a very responsible worker along with being extremely positive. I love solving projects
-     or tasks that make you think outside the box and use your creative thinking. I hope to keep learning new things as I start working.
-     Hobbies:
-
-	My main hobby is music. I play piano and sing. I learned classical piano for 10 years, then I decided to start playing by ear.
-	I would say I'm a great troubadour on piano.
-     */
 
     import {Card, CardTitle, CardText, CardActions, Button} from 'react-mdl';
 
@@ -34,7 +18,7 @@ class About extends Component {
                     </CardText>
                     <CardText>
                         <CardTitle>Me</CardTitle>
-                        I am a very motivated and hard-working programmer. My favorite programming languages are Javascript,
+                        I am a very motivated and hard-working programmer. My favorite programming language is Javascript but I also like
 	                    Python and Java. I am a very responsible worker along with being extremely positive. I love solving projects
                          or tasks that make you think outside the box and use your creative thinking. I hope to keep learning new things as I start working.
                     </CardText>
