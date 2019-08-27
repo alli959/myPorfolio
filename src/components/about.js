@@ -25,7 +25,6 @@ class About extends Component {
                     <CardText>
                         <CardTitle>Hobbies</CardTitle>
                         My main hobby is music. I play piano and sing. I learned classical piano for 10 years, then I decided to start playing by ear.
-	                    I would say I'm a great troubadour on piano.
                     </CardText>
                     <CardActions border>
                         <Button onClick={() => {window.open('https://github.com/alli959');}} colored>Github</Button>
